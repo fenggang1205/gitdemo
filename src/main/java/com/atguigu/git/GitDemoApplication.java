@@ -13,7 +13,8 @@ public class GitDemoApplication {
         System.out.println("push  test");
         System.out.println("pull  test");
         System.out.println("pull  test2");
-       
+        System.out.println("pull  test4");
+
 
     }
 }
