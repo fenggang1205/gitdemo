@@ -95,6 +95,19 @@ public class TestDemo {
 
         }
     }
+    @Test
+    public void test12() {
+        List<Student> list = StudentData.getList();
+        Map<Integer, List<Student>> collect = list.stream().collect(Collectors.groupingBy(Student::getGrade));
+        Iterator<Map.Entry<Integer, List<Student>>> iterator = collect.entrySet().iterator();
+        while (iterator.hasNext()){
+            Map.Entry<Integer, List<Student>> next = iterator.next();
+            next.getValue().stream().forEach(System.out::println);
+            System.out.println("=================");
+
+        }
+    }
+
 
         @Test
     public void test5(){
