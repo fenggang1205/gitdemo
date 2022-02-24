@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+
+<h1>tansun 欢迎你 </h1>
+
+<form action="/user" method="get">
+    <input value="RESR-GET 提交"  type="submit"/>
+</form>
+<form action="/user" method="post">
+    <input value="RESR-POST 提交"  type="submit"/>
+</form>
+    <form action="/user" method="post">
+        <input name="_method" type="hidden" value="delete"/>
+    <input value="RESR-DELETE 提交"  type="submit"/>
+</form>
+<form action="/user" method="put">
+    <input name="_method" type="hidden" value="put"/>
+    <input value="RESR-PUT 提交"  type="submit"/>
+</form>
+
+<ul>
+    <a href="/car/1/owner/zhangsan">测试@PathVariable </a>
+    <li>测试@PathVariable</li>
+
+    <a href="/goto">测试HttpServletRequest </a>
+    <li>测试HttpServletRequest</li>
+
+    <!--cars/sell;low=34;brand=byd,audi,yd-->
+    <a href="/cars/sell;low=34;brand=byd,audi,yd">测试@MatrixVariable </a>
+    <li>测试@MatrixVariable</li>
+
+</ul>
+
+
+</body>
+</html>
